@@ -863,9 +863,11 @@ header {
         .column__menu{
             padding-left: 31px;
             .left {
-                margin-right: 159px;
+                width: 50%;
+                margin-right: 128px;
             }
             .right{
+                width: 50%;
                 padding-top: 38px;
             }
             li{
