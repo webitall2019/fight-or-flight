@@ -825,10 +825,9 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .news__content {
-  padding-top: 318px;
-  margin-bottom: 100px;
+  padding: 318px 0px 100px 0px;
   background-image: url(../images/news-bg-2.svg);
-  background-position: 50% 140%;
+  background-position: 50% 89%;
   background-size: contain;
   background-repeat: no-repeat;
 }
