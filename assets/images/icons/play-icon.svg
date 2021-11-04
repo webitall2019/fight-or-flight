@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.267" y1="0.089" x2="0.704" y2="0.916" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9adde9"/>
+      <stop offset="1" stop-color="#f2c9aa"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_38" data-name="Сгруппировать 38" transform="translate(-1491 -2949)">
+    <circle id="Эллипс_1" data-name="Эллипс 1" cx="40" cy="40" r="40" transform="translate(1491 2949)" opacity="0.3" fill="url(#linear-gradient)"/>
+    <circle id="Эллипс_2" data-name="Эллипс 2" cx="30" cy="30" r="30" transform="translate(1501 2959)" opacity="0.5" fill="url(#linear-gradient)"/>
+    <path id="Icon_ionic-ios-play" data-name="Icon ionic-ios-play" d="M9,7.165v15.17a.391.391,0,0,0,.585.36L21.61,15.11a.43.43,0,0,0,0-.715L9.585,6.81A.387.387,0,0,0,9,7.165Z" transform="translate(1517.6 2974.249)" fill="#fff"/>
+  </g>
+</svg>
