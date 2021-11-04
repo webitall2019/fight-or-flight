@@ -987,10 +987,12 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .footer__columns .column__menu .left {
-  margin-right: 159px;
+  width: 50%;
+  margin-right: 128px;
 }
 
 .footer__columns .column__menu .right {
+  width: 50%;
   padding-top: 38px;
 }
 
