@@ -330,8 +330,6 @@ header {
 }
 // =====  works grid 
 .works-grid {
-
-    
         .column__item{
             position: relative;
             overflow: hidden;
@@ -453,7 +451,7 @@ header {
 // ===== services
 .services {
     background-color: $lightGrey;
-    padding: 175px 0 57px;
+    padding: 175px 0 54px;
     margin-top: -150px;
     img{
         position: relative;
@@ -574,7 +572,7 @@ header {
 } 
 // ==== who we are
 .we-are{
-    padding-top: 145px;
+    padding-top: 148px;
     .container{
         position: relative;
     }
