@@ -705,10 +705,6 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-transition: ease 1s;
-  transition: ease 1s;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
 }
 
 .fof__slider .slider__item .item__content {
