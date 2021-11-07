@@ -1,66 +1,3 @@
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-Light.eot");
-  src: local("../fonts/Rubik/Rubik Light"), local("../fonts/Rubik/Rubik-Light"), url("../fonts/Rubik/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Light.woff") format("woff"), url("../fonts/Rubik/Rubik-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-Medium.eot");
-  src: local("../fonts/Rubik/Rubik Medium"), local("../fonts/Rubik/Rubik-Medium"), url("../fonts/Rubik/Rubik-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik/Rubik-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-Bold.eot");
-  src: local("../fonts/Rubik/Rubik Bold"), local("../fonts/Rubik/Rubik-Bold"), url("../fonts/Rubik/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-Regular.eot");
-  src: local("../fonts/Rubik/Rubik"), local("../fonts/Rubik/Rubik-Regular"), url("../fonts/Rubik/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik Mono One';
-  src: url("../fonts/Rubik/RubikMonoOne-Regular.eot");
-  src: local("../fonts/Rubik/Rubik Mono One Regular"), local("../fonts/Rubik/RubikMonoOne-Regular"), url("../fonts/Rubik/RubikMonoOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/RubikMonoOne-Regular.woff") format("woff"), url("../fonts/Rubik/RubikMonoOne-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-Black.eot");
-  src: local("../fonts/Rubik/Rubik Black"), local("../fonts/Rubik/Rubik-Black"), url("../fonts/Rubik/Rubik-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Black.woff") format("woff"), url("../fonts/Rubik/Rubik-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: '../fonts/Rubik/Rubik';
-  src: url("../fonts/Rubik/Rubik-SemiBold.eot");
-  src: local("../fonts/Rubik/Rubik SemiBold"), local("../fonts/Rubik/Rubik-SemiBold"), url("../fonts/Rubik/Rubik-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-SemiBold.woff") format("woff"), url("../fonts/Rubik/Rubik-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -112,7 +49,7 @@ body {
 }
 
 .container {
-  max-width: 79.1%;
+  max-width: 79.063%;
   margin: 0 auto;
 }
 
@@ -167,10 +104,12 @@ body {
   right: -15px;
   top: calc(50% - 5px);
   position: absolute;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
 :root .more:hover::after {
-  right: 15px;
+  right: -20px;
 }
 
 :root .boxed {
@@ -237,7 +176,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
-  padding-left: 2px;
+  padding-left: 1px;
 }
 
 :root .cat:after {
@@ -324,10 +263,11 @@ header .navigation .navigation__list {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 1px;
 }
 
 header .navigation .navigation__list .list-item {
-  margin-right: 21px;
+  margin-right: 19px;
   line-height: 26px;
   position: relative;
 }
@@ -638,7 +578,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 .we-are__left-side {
   max-width: 645px;
   position: relative;
-  padding: 97px 0px 88px 48px;
+  padding: 97px 0px 88px 46.5px;
   z-index: 10;
 }
 
@@ -658,23 +598,26 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .we-are__left-side h2 {
-  margin: 25px 0 17px;
+  margin: 25px 0 16px;
 }
 
 .we-are__left-side p {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .we-are__left-side h4 {
-  margin-bottom: 6px;
+  margin-bottom: 7px;
   font-weight: 500;
+  line-height: 26px;
+  padding-left: 4px;
 }
 
 .we-are__left-side .left-side__services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
+  padding-left: 4px;
 }
 
 .we-are__left-side .left-side__services .column {
@@ -687,7 +630,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 .we-are__left-side .left-side__services .column img {
   width: 15px;
   height: 11px;
-  margin-right: 9px;
+  margin-right: 5px;
 }
 
 .we-are__left-side .left-side__services .column li {
@@ -700,6 +643,9 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .we-are__left-side .boxed {
+  margin-left: 3px;
+  line-height: 26px;
+  padding: 14px 34px 13px 21px;
   color: #31343A;
 }
 
@@ -714,8 +660,17 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
   top: -22px;
 }
 
+.we-are .cat {
+  padding-left: 4px;
+}
+
+.we-are .cat::after {
+  left: 3px;
+  width: 85px;
+}
+
 .fof {
-  padding-top: 146px;
+  padding-top: 144px;
 }
 
 .fof__cat::after {
@@ -729,7 +684,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 25px 0 35px;
+  margin: 26px 0 36px;
 }
 
 .fof__title .boxed {
@@ -759,7 +714,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 .fof__slider .slider__item .item__content {
   position: relative;
   padding-left: 30px;
-  padding-bottom: 72px;
+  padding-bottom: 69px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,7 +731,11 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .fof__slider .slider__item .item__content h4 {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+}
+
+.fof__slider .slider__item .item__content p {
+  font-size: 16px;
 }
 
 .fof__slider .slider__item .item__content::before {
@@ -803,7 +762,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 
 .fof__slider .slick-arrow {
   position: absolute;
-  bottom: -67px;
+  bottom: -70px;
   top: inherit;
   width: 40px;
   height: 40px;
@@ -825,9 +784,10 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .news__content {
-  padding: 318px 0px 100px 0px;
+  padding-top: 318px;
+  margin-bottom: 100px;
   background-image: url(../images/news-bg-2.svg);
-  background-position: 50% 89%;
+  background-position: 50% 140%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -837,11 +797,13 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .news .cat::after {
+  left: 0px;
+  bottom: -4px;
   background: linear-gradient(315deg, #9adde9 0%, #f2c9aa 100%);
 }
 
 .news__title {
-  margin: 18px 0 26px;
+  margin: 20px 0 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -855,11 +817,25 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .news__title .boxed {
-  margin-top: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 49px;
+  width: 112px;
+  position: relative;
+  top: -8px;
+  left: 0.5px;
 }
 
 .news__title .boxed::after {
   top: calc(50% - px);
+}
+
+.news__title .boxed:hover::after {
+  right: 17px;
 }
 
 .news__cards {
@@ -880,7 +856,7 @@ header .navigation .navigation__list .nav-bar span:not(:last-child) {
 }
 
 .news__cards .card__date {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-size: 14px;
 }
 
