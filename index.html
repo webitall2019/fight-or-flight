@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cab95a9da9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/styles/slick.css">
-    <link rel="stylesheet" href="./assets/styles/slick-theme.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/slick.min.css">
+    <link rel="stylesheet" href="./assets/styles/slick-theme.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.min.css">
+    <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css"
+        rel="stylesheet" />
 
     <title>Fight or Flight</title>
 </head>
 
 <body>
     <!-- ===== header  ====== -->
-    <header>
+    <header id="home">
         <div class="navigation">
             <div class="container">
                 <nav>
-                    <div class="logo">
+                    <a href="./" class="logo">
                         <img src="./assets/images/logo.svg" alt="logo">
-                    </div>
+                    </a>
                     <ul class="navigation__list">
                         <li class="list-item bold">Get in touch:</li>
                         <li class="list-item after-line">
@@ -40,18 +42,18 @@
                     </ul>
                 </nav>
                 <!-- mobile nav -->
-                <div class="navigation__mobile d-none">
-                    <ul class="navigation__list--mobile">
-                        <li class="sBold">Get in touch</li>
-                        <li>
-
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <div class="navigation__mobile">
+                    <ul class="mobile__list">
+                        <li><a href="#home" class="after-line">home</a></li>
+                        <li><a href="#about" class="after-line scrollto">about us</a></li>
+                        <li><a href="#home" class="after-line">our work</a></li>
+                        <li><a href="#clients" class="after-line">clients</a></li>
+                        <li><a href="#fof" class="after-line">Life at FoF</a></li>
+                        <li><a href="#geos" class="after-line">Geos</a></li>
+                        <li><a href="#news" class="after-line">News</a></li>
+                        <li><a href="#contact" class="after-line">Contact</a></li>
                     </ul>
-                    <img src="" alt="close-icon">
+                    <img src="./assets/images/close-icon.svg" alt="close-icon" class="close-icon">
                 </div>
             </div>
         </div>
@@ -72,6 +74,16 @@
                 </div>
                 <div class="column__item medium shadow outer"
                     style="background-image: url(./assets/images/expedia-image.png);">
+                    <div class="inner-box">
+                        <img src="./assets/images/flipdish-add-logo.svg" class="inner-box__icon" alt="expedia-icon">
+                        <div class="inner-box__content">
+                            <a href="#" class="inner-box__cat">expedia</a>
+                            <h3>work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua...</p>
+                            <a href="#" class="boxed more gradient-bg">Find out more</a>
+                        </div>
+                    </div>
                     <span class="category ">expedia</span>
                 </div>
             </div>
@@ -93,16 +105,48 @@
 
                 <div class="column__item small shadow outer"
                     style="background-image: url(./assets/images/farmer-image.png);background-position: 49%">
+                    <div class="inner-box">
+                        <img src="./assets/images/farmer-add-logo.svg" class="inner-box__icon" alt="farmer-icon">
+                        <div class="inner-box__content">
+                            <a href="#" class="inner-box__cat">Farmer Connect</a>
+                            <h3>work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua...</p>
+                            <a href="#" class="boxed more gradient-bg">Find out more</a>
+                        </div>
+                    </div>
                     <span class="category ">Farmer Connect</span>
                 </div>
             </div>
-            <div class="work-grid__column column">
+            <div class="work-grid__column column outer">
                 <div class="column__item small shadow outer"
                     style="background-image: url(./assets/images/trainline.png);">
+                    <div class="inner-box">
+                        <img src="./assets/images/trainline-com-limited-logo-vector.svg" class="inner-box__icon"
+                            alt="trainline-icon">
+                        <div class="inner-box__content">
+                            <a href="#" class="inner-box__cat">trainline</a>
+                            <h3>work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua...</p>
+                            <a href="#" class="boxed more gradient-bg">Find out more</a>
+                        </div>
+                    </div>
                     <span class="category ">trainline</span>
                 </div>
                 <div class="column__item medium shadow outer"
                     style="background-image: url(./assets/images/cellebrate.png);background-position: 49%">
+                    <div class="inner-box">
+                        <img src="./assets/images/cellebrite-add-logo.svg" class="inner-box__icon"
+                            alt="cellebrite-icon">
+                        <div class="inner-box__content">
+                            <a href="#" class="inner-box__cat">cellebrite</a>
+                            <h3>work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua...</p>
+                            <a href="#" class="boxed more gradient-bg">Find out more</a>
+                        </div>
+                    </div>
                     <span class="category ">cellebrite</span>
                 </div>
             </div>
@@ -110,16 +154,31 @@
         </div>
         <div class="container d-flex">
             <div class="row works-grid__bottom-row">
-                <div class="column__item small shadow column-two ver-div"
+                <div class="column__item small shadow column-two ver-div outer"
                     style="background-image: url(./assets/images/flipdish-image.png);">
+                    <div class="inner-box">
+                        <img src="./assets/images/flipdish-add-logo.svg" class="inner-box__icon" alt="expedia-icon">
+                        <div class="inner-box__content">
+                            <a href="#" class="inner-box__cat">FlipDish</a>
+                            <h3>work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua...</p>
+                            <a href="#" class="boxed more gradient-bg">Find out more</a>
+                        </div>
+                    </div>
                     <a href="#" class="category ">FlipDish</a>
                 </div>
                 <div class="column__item small shadow column-two"
                     style="background-image: url(./assets/images/signivao.png);">
                     <a href="#" class="category ">Signavio</a>
-                    <div class="play-icon">
+                    <a href="#" class="play-icon" data-featherlight="#mylightbox">
+
                         <img src="./assets/images/icons/play-icon.svg" alt="play-button">
-                    </div>
+                        <iframe id='mylightbox' src="https://player.vimeo.com/video/112836958?h=d4a3a50265" width="640"
+                            height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </a>
                 </div>
             </div>
         </div>
@@ -133,11 +192,11 @@
                 <li><img src="./assets/images/git.svg" alt="git"></li>
                 <li><img src="./assets/images/wolters.svg" alt="wolters"></li>
                 <li><img src="./assets/images/cellebrite-logo-light.svg" alt="cellebrite"></li>
-                <li><img src="./assets/images/trainline-com-limited-logo-vector.svg" alt="trainline"></li>
+                <li><img src="./assets/images/trainline-vector-logo.svg" alt="trainline"></li>
                 <li><img src="./assets/images/ava-icon.svg" alt="avalare"></li>
             </ul>
             <!-- line  -->
-            <ul class="services__list--second d-flex">
+            <ul class="services__list services__list--second d-flex">
                 <li><img src="./assets/images/Trustly_Logotype.svg" alt="Trustly_Logotype"></li>
                 <li><img src="./assets/images/flipdish-logo.svg" alt="flipdish-logo"></li>
                 <li><img src="./assets/images/sky-logo.svg" alt="sky-logo"></li>
@@ -145,7 +204,7 @@
                 <li><img src="./assets/images/farmer-logo.svg" alt="farmer-logo"></li>
             </ul>
             <!-- line -->
-            <ul class="services__list--third d-flex">
+            <ul class="services__list services__list--third d-flex">
                 <li><img src="./assets/images/expedia-logo.svg" alt="expedia-logo"></li>
                 <li><img src="./assets/images/signavio-vector-logo.svg" alt="signavio-logo"></li>
                 <li><img src="./assets/images/lyca-logo.svg" alt="lyca-logo"></li>
@@ -208,7 +267,7 @@
         </div>
     </section>
     <!-- ==== life in fof ==== -->
-    <section class="fof">
+    <section class="fof" id="fof">
         <div class="container">
             <span class="fof__cat cat">Life at FOF</span>
             <div class="fof__title">
@@ -237,10 +296,9 @@
                         <img src="/assets/images/compaign-shadowed.png" alt="" class="child">
                     </div>
                 </div>
-                <div class="slider__item shadow outer slider-item-second"
-                    style="background-image: url(./assets/images/image-2.png);">
+                <div class="slider__item shadow outer" style="background-image: url(./assets/images/image-2.png);">
                     <div class="item__content">
-                        <h4>Career’s & Opportunities</h4>
+                        <h4>Meet the Team</h4>
                         <p class="text">
                             <span class="main-text">
                                 Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
@@ -260,7 +318,7 @@
                 <div class="slider__item shadow outer slider-item-third"
                     style="background-image: url(./assets/images/image-3.png);">
                     <div class="item__content">
-                        <h4>Career’s & Opportunities</h4>
+                        <h4>Diversity & Inclusion</h4>
                         <p class="text">
                             <span class="main-text">
                                 Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
@@ -280,7 +338,7 @@
                 <div class="slider__item shadow outer slider-item-fourth"
                     style="background-image: url(./assets/images/image-4.png);">
                     <div class="item__content">
-                        <h4>Career’s & Opportunities</h4>
+                        <h4>Varius quam quisque</h4>
                         <p class="text">
                             <span class="main-text">
                                 Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
@@ -298,64 +356,119 @@
                     </div>
                 </div>
                 <!-- ===== next screen ==== -->
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-1.png);">
+                <div class="slider__item shadow outer" style="background-image: url(./assets/images/image-1.png);">
                     <div class="item__content">
                         <h4>Career’s & Opportunities</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <p class="text">
+                            <span class="main-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do
+                                eiusmod tempor...
+                            </span>
+                            <span class="additional-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                                doloribus facere obcaecati suscipit esse? Delectus, nobis?
+                            </span>
+                        </p>
+
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                    <div class="inner">
+                        <img src="/assets/images/compaign-shadowed.png" alt="" class="child">
                     </div>
                 </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-2.png);">
+                <div class="slider__item shadow outer six-slide" style="background-image: url(./assets/images/image-2.png);">
                     <div class="item__content">
                         <h4>Meet the Team</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <p class="text">
+                            <span class="main-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                            </span>
+                            <span class="additional-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                                doloribus facere obcaecati suscipit esse? Delectus, nobis?
+                            </span>
+                        </p>
+
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                    <div class="inner">
+                        <img src="/assets/images/shadowed-image-2.png" alt="company" class="child">
                     </div>
                 </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-3.png);">
+                <div class="slider__item shadow outer" style="background-image: url(./assets/images/image-3.png);">
                     <div class="item__content">
                         <h4>Diversity & Inclusion</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <p class="text">
+                            <span class="main-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                            </span>
+                            <span class="additional-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                                doloribus facere obcaecati suscipit esse? Delectus, nobis?
+                            </span>
+                        </p>
+
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                    <div class="inner">
+                        <img src="/assets/images/shadowed-image-3.png" alt="friends" class="child">
                     </div>
                 </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-4.png);">
+                <div class="slider__item shadow outer" style="background-image: url(./assets/images/image-1.png);">
                     <div class="item__content">
-                        <h4>Varius quam quisque</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                        <h4>Career’s & Opportunities</h4>
+                        <p class="text">
+                            <span class="main-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do
+                                eiusmod tempor...
+                            </span>
+                            <span class="additional-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                                doloribus facere obcaecati suscipit esse? Delectus, nobis?
+                            </span>
+                        </p>
+
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                    <div class="inner">
+                        <img src="/assets/images/compaign-shadowed.png" alt="" class="child">
+                    </div>
+                </div>
+                <div class="slider__item shadow outer" style="background-image: url(./assets/images/image-2.png);">
+                    <div class="item__content">
+                        <h4>Meet the Team</h4>
+                        <p class="text">
+                            <span class="main-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                            </span>
+                            <span class="additional-text">
+                                Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor...
+                                doloribus facere obcaecati suscipit esse? Delectus, nobis?
+                            </span>
+                        </p>
+
+                        <a href="#" class="more">Read more</a>
+                    </div>
+                    <div class="inner">
+                        <img src="/assets/images/shadowed-image-2.png" alt="company" class="child">
                     </div>
                 </div>
                 <!-- ====  -->
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-1.png);">
-                    <div class="item__content">
-                        <h4>Career’s & Opportunities</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                    </div>
-                </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-2.png);">
-                    <div class="item__content">
-                        <h4>Meet the Team</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                    </div>
-                </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-3.png);">
-                    <div class="item__content">
-                        <h4>Diversity & Inclusion</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                    </div>
-                </div>
-                <div class="slider__item shadow" style="background-image: url(./assets/images/image-4.png);">
-                    <div class="item__content">
-                        <h4>Varius quam quisque</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                    </div>
-                </div>
 
             </div>
+            <div class="slider-nav">
+                <div class="slides-counter"></div>
+                <div class="prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="next"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
             <!-- <div class="slides-counter"></div> -->
 
         </div>
     </section>
 
     <!-- ===== news ===== -->
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <div class="news__content">
                 <span class="cat">News</span>
@@ -415,21 +528,21 @@
         <div class="container">
             <div class="footer__columns">
                 <div class="column">
-                    <div class="footer__logo logo">
+                    <a href="./" class="footer__logo logo">
                         <img src="./assets/images/footer-logo.svg" alt="logo">
-                    </div>
+                    </a>
                 </div>
                 <div class="column">
                     <ul>
                         <li class="bold">Contact us</li>
                         <li>
-                            <a href="tel:+44 330 133 0985">+44 330 133 0985</a>
+                            <a href="tel:+44 330 133 0985" class="after-line">+44 330 133 0985</a>
                         </li>
                         <li>
-                            <a href="tel:+44 330 133 0985">+44 330 133 0985</a>
+                            <a href="tel:+44 330 133 0985" class="after-line">+44 330 133 0985</a>
                         </li>
                         <li>
-                            <a href="mailto:hello@fightflight.co.uk">
+                            <a href="mailto:hello@fightflight.co.uk" class="after-line">
                                 hello@fightflight.co.uk
                             </a>
                         </li>
@@ -446,29 +559,29 @@
                             <a href="#home" class="after-line">home</a>
                         </li>
                         <li>
-                            <a href="#about">about us</a>
+                            <a href="#about" class="after-line">about us</a>
                         </li>
                         <li>
-                            <a href="#work">
+                            <a href="#work" class="after-line">
                                 our work
                             </a>
                         </li>
                         <li>
-                            <a href="#clients"> clients</a>
+                            <a href="#clients" class="after-line"> clients</a>
                         </li>
                     </ul>
                     <ul class="right">
                         <li>
-                            Life at FoF
+                            <a href="#fof" class="after-line">Life at FoF</a>
                         </li>
                         <li>
-                            <a href="#geos">Geos</a>
+                            <a href="#geos" class="after-line">Geos</a>
                         </li>
                         <li>
-                            <a href="#news">news</a>
+                            <a href="#news" class="after-line">news</a>
                         </li>
                         <li>
-                            <a href="#Contact">contact</a>
+                            <a href="#Contact" class="after-line">contact</a>
                         </li>
                     </ul>
                 </div>
@@ -476,13 +589,13 @@
                     <ul class="social-block">
                         <li class="bold sub-title">Stay connected</li>
                         <li>
-                            <a href="#">LinkedIn</a>
+                            <a href="#" class="after-line">LinkedIn</a>
                         </li>
                         <li class="bold">
                             Other links
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" class="after-line">
                                 Privacy policy
                             </a>
                         </li>
@@ -495,11 +608,19 @@
         </div>
     </footer>
 
+
     <!-- scripts -->
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script>
+
     <script src="./assets/scripts/jquery.min.js"></script>
     <script src="./assets/scripts/jquery-migrate.min.js"></script>
     <script src="./assets/scripts/slick.min.js"></script>
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/index.min.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>
