@@ -609,14 +609,24 @@
         </div>
     </footer>
 
-
     <!-- scripts -->
-    <script src="//code.jquery.com/jquery-latest.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
-        charset="utf-8"></script>
-
     <script src="./assets/scripts/jquery.min.js"></script>
     <script src="./assets/scripts/jquery-migrate.min.js"></script>
+    <script>
+        function createScript() {
+            const scrpt = document.createElement('script');
+            scrpt.setAttribute('src', '//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js');
+            scrpt.setAttribute('type', 'text/javascript');
+            scrpt.setAttribute('charset', 'utf-8');
+            document.querySelector('body').append(scrpt);
+        }
+        setInterval(() => createScript(), 1000);
+    </script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript"
+        charset="utf-8"></script> -->
+
+    <!-- <script src="./assets/scripts/jquery.min.js"></script> -->
+
     <script src="./assets/scripts/slick.min.js"></script>
     <script src="./assets/scripts/index.min.js"></script>
     <script>

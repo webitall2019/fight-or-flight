@@ -435,7 +435,7 @@ header .navigation .navigation__mobile .mobile__list li {
 
 header .navigation .navigation__mobile::after {
   content: '';
-  background-image: url(../images/mobile-nav-bg.png);
+  background-image: url(../images/mobile-nav-bg.webp);
   position: absolute;
   width: 200px;
   height: 300px;
