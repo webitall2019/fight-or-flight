@@ -1269,6 +1269,60 @@ header {
                     }
                 }
             }
+            @media screen and (max-width: 1024.1px) {
+                &:hover{
+                    
+                
+                    &[data-slick-index='2']{
+                        .item__content, .inner{
+                            left: -40vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                    &[data-slick-index='3']{
+                        .item__content, .inner{
+                            left: -58vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                    &[data-slick-index='4']{
+                        .item__content, .inner{
+                            left: -26vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                    &[data-slick-index='5']{
+                        .item__content, .inner{
+                            left: -53vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                    &[data-slick-index='7']{
+                        .item__content, .inner{
+                            left: -26vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                    &[data-slick-index='8']{
+                        .item__content, .inner{
+                            left: -53vw;
+                        }
+                        .child{
+                            width: 100vw;
+                        }
+                    }
+                }
+            }
             @media screen and (max-width: 768.1px) {
                 &:hover{
                     &[data-slick-index='0']{
