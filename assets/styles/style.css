@@ -732,18 +732,50 @@ header .navigation .navigation__mobile .close-icon:hover {
 
 .works-grid .small .inner-box .inner-box__content {
   bottom: 0;
-  padding: 0px 20px 20px 30px;
+  padding: 30px 20px 20px 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .works-grid .small .inner-box .inner-box__content {
+    padding: 0px 20px 20px 30px;
+  }
+  .works-grid .small .inner-box .inner-box__content h3, .works-grid .small .inner-box .inner-box__content p {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .works-grid .small .inner-box .inner-box__content {
     height: 100%;
+    padding: 0px 20px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .works-grid .small.column-two:first-child .inner-box__content {
     padding: 0px 20px 10px 30px;
+  }
+  .works-grid .small.column-two:first-child .inner-box__content h3, .works-grid .small.column-two:first-child .inner-box__content p {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .works-grid .small.column-two:first-child .inner-box__content h3 {
+    margin-bottom: 15px;
   }
 }
 
@@ -1003,9 +1035,9 @@ header .navigation .navigation__mobile .close-icon:hover {
   position: relative;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .we-are .container {
-    padding-bottom: 200px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1016,7 +1048,7 @@ header .navigation .navigation__mobile .close-icon:hover {
 }
 
 .we-are__left-side {
-  max-width: 645px;
+  max-width: 800px;
   position: relative;
   padding: 97px 0px 88px 46.5px;
   z-index: 10;
@@ -1119,19 +1151,13 @@ header .navigation .navigation__mobile .close-icon:hover {
 
 @media screen and (max-width: 1440px) {
   .we-are__left-side {
-    width: 570px;
+    width: 800px;
     padding: 50px 20px;
+    position: relative;
+    margin: 0 auto;
   }
   .we-are__left-side br {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .we-are__left-side {
-    position: absolute;
-    left: -38%;
-    width: 470px;
   }
   .we-are__left-side .left-side__services .column {
     max-width: 60%;
@@ -1189,37 +1215,36 @@ header .navigation .navigation__mobile .close-icon:hover {
 .we-are .we-are__right-side {
   max-width: 985px;
   position: absolute;
-  right: -8px;
+  text-align: center;
+  margin: 0 auto;
   top: -22px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 2500px) {
   .we-are .we-are__right-side {
-    max-width: 670px;
+    max-width: 985px;
     position: absolute;
-    right: -61px;
     top: 85px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1920px) {
   .we-are .we-are__right-side {
-    max-width: 530px;
+    top: -15px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .we-are .we-are__right-side {
+    max-width: 700px;
     position: relative;
     top: -14px;
-    right: -40%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .we-are .we-are__right-side {
-    right: -20%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .we-are .we-are__right-side {
-    right: -3%;
+    top: -10px;
   }
 }
 
@@ -1232,7 +1257,7 @@ header .navigation .navigation__mobile .close-icon:hover {
   width: 85px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
   .we-are {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1276,7 +1301,7 @@ header .navigation .navigation__mobile .close-icon:hover {
   margin-top: -6px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 878px) {
   .fof__title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1287,6 +1312,9 @@ header .navigation .navigation__mobile .close-icon:hover {
     margin-top: 20px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .fof__title h2 br {
+    display: none;
   }
 }
 
@@ -1963,13 +1991,8 @@ header .navigation .navigation__mobile .close-icon:hover {
 @media screen and (max-width: 768px) {
   .news__content {
     background-position: 50% 65%;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .news__content {
-    margin-bottom: 50px;
-    padding-top: 220px;
+    margin: 50px 0;
+    padding-top: 180px;
   }
 }
 
@@ -2021,7 +2044,7 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   .news__title {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2030,7 +2053,6 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
   .news__title .boxed {
     height: 40px;
-    width: 110px;
     margin-top: 20px;
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -2095,7 +2117,7 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   .news__cards {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2134,12 +2156,6 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .news__banner p {
-    max-width: 88%;
-  }
-}
-
 .footer {
   padding: 100px 0 17px;
   background-color: #18191A;
@@ -2153,6 +2169,7 @@ header .navigation .navigation__mobile .close-icon:hover {
       -ms-flex: 1;
           flex: 1;
   margin-right: 0;
+  position: relative;
 }
 
 .footer .after-line::after {
@@ -2286,7 +2303,7 @@ header .navigation .navigation__mobile .close-icon:hover {
     font-size: 16px;
   }
   .news__banner p {
-    max-width: 70%;
+    max-width: 90%;
   }
 }
 
@@ -2363,6 +2380,19 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
   .works-grid .medium {
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 742px) {
+  .footer-email, .adress {
+    position: absolute;
+    right: 0;
+  }
+  .adress {
+    bottom: 40px;
+  }
+  .footer-email {
+    bottom: 0;
   }
 }
 
