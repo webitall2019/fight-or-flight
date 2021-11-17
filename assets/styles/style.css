@@ -2228,6 +2228,18 @@ header .navigation .navigation__mobile .close-icon:hover {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .footer__columns .column__menu .left {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__columns .column__menu .left {
+    padding-left: 0px;
+  }
+}
+
 .footer__columns .column__menu .right {
   width: 50%;
   padding-top: 38px;
